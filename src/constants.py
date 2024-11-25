@@ -19,3 +19,16 @@ BIRD_IMGS = [
     os.path.join(IMAGE_PATH, "redbird-midflap.png"),
     os.path.join(IMAGE_PATH, "redbird-upflap.png"),
 ]
+
+# Chim
+BIRD_SCALE = 0.5  # Tỷ lệ giảm kích thước
+BIRD_GRAVITY = 0.4  # Trọng lực tác động lên chim
+BIRD_JUMP_STRENGTH = -8  # Sức bật khi nhấn phím nhảy
+BIRD_MAX_FALL_SPEED = 8  # Tốc độ rơi tối đa
+
+# Ống
+PIPE_SCALE = 0.7  # Tỷ lệ giảm kích thước
+PIPE_SPEED = 4  # Tốc độ di chuyển của ống
+
+# Khoảng cách ống
+PIPE_GAP = 180   # Khoảng cách giữa ống trên và dưới
