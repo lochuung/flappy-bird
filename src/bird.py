@@ -1,5 +1,5 @@
 import pygame
-from constants import BIRD_IMGS, BIRD_SCALE, BIRD_GRAVITY, BIRD_JUMP_STRENGTH, BIRD_MAX_FALL_SPEED
+from constants import AUDIO_FILES, BIRD_IMGS, BIRD_SCALE, BIRD_GRAVITY, BIRD_JUMP_STRENGTH, BIRD_MAX_FALL_SPEED
 
 
 class Bird(pygame.sprite.Sprite):
@@ -49,6 +49,8 @@ class Bird(pygame.sprite.Sprite):
 
     def jump(self):
         self.clicked = True
+        # Play wing sound
+        pygame.mixer.Sound(AUDIO_FILES["wing"]).play()
 
     def rotate(self):
         # Xoay chim dựa trên vận tốc rơi

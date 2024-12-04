@@ -1,10 +1,10 @@
 import pygame
 
-from src.constants import PIPE_SPEED, PIPE_SCALE, PIPE_IMG
+from constants import PIPE_SPEED, PIPE_SCALE, PIPE_IMG
 
 
 class Pipe(pygame.sprite.Sprite):
-    def __init__(self, x, y, is_top, gap):
+    def __init__(self, x, y, is_top, gap, speed):
         super().__init__()
         self.image = pygame.image.load(PIPE_IMG).convert_alpha()
 
@@ -21,7 +21,7 @@ class Pipe(pygame.sprite.Sprite):
             self.rect = self.image.get_rect(top=y + gap // 2)
 
         self.rect.x = x
-        self.speed = PIPE_SPEED
+        self.speed = speed
         self.scored = False  # Track if the pipe has been scored
 
     def update(self):

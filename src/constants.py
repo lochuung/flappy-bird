@@ -20,6 +20,16 @@ BIRD_IMGS = [
     os.path.join(IMAGE_PATH, "redbird-upflap.png"),
 ]
 
+# File âm thanh
+AUDIO_PATH = os.path.join(ASSET_PATH, "audio")
+AUDIO_FILES = {
+    "die": os.path.join(AUDIO_PATH, "die.wav"),
+    "hit": os.path.join(AUDIO_PATH, "hit.wav"),
+    "point": os.path.join(AUDIO_PATH, "point.wav"),
+    "swoosh": os.path.join(AUDIO_PATH, "swoosh.wav"),
+    "wing": os.path.join(AUDIO_PATH, "wing.wav"),
+}
+
 # Chim
 BIRD_SCALE = 0.5  # Tỷ lệ giảm kích thước
 BIRD_GRAVITY = 0.4  # Trọng lực tác động lên chim
@@ -31,4 +41,5 @@ PIPE_SCALE = 0.7  # Tỷ lệ giảm kích thước
 PIPE_SPEED = 4  # Tốc độ di chuyển của ống
 
 # Khoảng cách ống
-PIPE_GAP = 180   # Khoảng cách giữa ống trên và dưới
+INITIAL_PIPE_SPEED = 4  
+INITIAL_PIPE_GAP = 200
