@@ -34,6 +34,11 @@ class Bird(pygame.sprite.Sprite):
         # Cập nhật vị trí của chim
         self.rect.y += int(self.velocity)
 
+        # Ngăn chim bay lên trên đỉnh màn hình
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.velocity = 0
+
         # Đảm bảo chim không rơi khỏi màn hình
         if self.rect.bottom > 450:
             self.rect.bottom = 450

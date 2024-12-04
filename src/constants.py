@@ -39,5 +39,5 @@ BIRD_MAX_FALL_SPEED = 8  # Tốc độ rơi tối đa
 # Ống
 PIPE_SCALE = 0.7  # Tỷ lệ giảm kích thước
 # Khoảng cách ống
-INITIAL_PIPE_SPEED = 4  
+INITIAL_PIPE_SPEED = 4  # Starting speed of pipes
 INITIAL_PIPE_GAP = 200

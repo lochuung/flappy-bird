@@ -102,8 +102,9 @@ def main():
             score_text = font.render(f"Score: {int(score)}", True, (255, 255, 255))
             screen.blit(score_text, (20, 20))
 
-            # Check for collisions
-            if pygame.sprite.spritecollide(flappy, pipe_group, False) or flappy.rect.bottom >= 450:
+            # Check for collisions with pipes and ground only
+            if (pygame.sprite.spritecollide(flappy, pipe_group, False) or 
+                flappy.rect.bottom >= 450):
                 game_over = True
                 sounds["hit"].play()
 
