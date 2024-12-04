@@ -92,7 +92,7 @@ def main():
                     pipe.scored = True
                     sounds["point"].play()
                     # Increase difficulty at every 5 points
-                    if int(score) % 5 == 0 and pipe.scored:
+                    if int(score) != 0 and int(score) % 5 == 0 and pipe.scored:
                         pipe_speed += 1  # Increase pipe speed
                         pipe_gap -= 10  # Decrease pipe gap
                         if pipe_gap < 100:

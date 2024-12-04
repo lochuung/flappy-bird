@@ -1,6 +1,6 @@
 import pygame
 
-from constants import PIPE_SPEED, PIPE_SCALE, PIPE_IMG
+from constants import PIPE_SCALE, PIPE_IMG
 
 
 class Pipe(pygame.sprite.Sprite):
